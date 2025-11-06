@@ -5,18 +5,23 @@
       <sourceFolder url="file://$MODULE_DIR$/backend/app" isTestSource="false" packagePrefix="App\" />
       <sourceFolder url="file://$MODULE_DIR$/backend/database/factories" isTestSource="false" packagePrefix="Database\Factories\" />
       <sourceFolder url="file://$MODULE_DIR$/backend/database/seeders" isTestSource="false" packagePrefix="Database\Seeders\" />
-      <sourceFolder url="file://$MODULE_DIR$/backend/tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/backend/tests" isTestSource="true" packagePrefix="Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/spec" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/brick/math" />
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/carbonphp/carbon-doctrine-types" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/vendor/clue/ndjson-react" />
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/composer" />
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/dflydev/dot-access-data" />
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/doctrine/inflector" />
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/doctrine/lexer" />
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/dragonmantank/cron-expression" />
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/egulias/email-validator" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/vendor/evenement/evenement" />
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/fakerphp/faker" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/vendor/fidry/cpu-core-counter" />
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/filp/whoops" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/vendor/friendsofphp/php-cs-fixer" />
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/fruitcake/php-cors" />
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/graham-campbell/result-type" />
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/guzzlehttp/guzzle" />
@@ -69,6 +74,13 @@
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/ralouphie/getallheaders" />
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/ramsey/collection" />
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/ramsey/uuid" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/vendor/react/cache" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/vendor/react/child-process" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/vendor/react/dns" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/vendor/react/event-loop" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/vendor/react/promise" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/vendor/react/socket" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/vendor/react/stream" />
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/sebastian/cli-parser" />
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/sebastian/code-unit" />
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/sebastian/code-unit-reverse-lookup" />
@@ -92,17 +104,20 @@
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/symfony/error-handler" />
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/symfony/event-dispatcher" />
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/symfony/event-dispatcher-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/vendor/symfony/filesystem" />
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/symfony/finder" />
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/symfony/http-foundation" />
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/symfony/http-kernel" />
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/symfony/mailer" />
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/symfony/mime" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/vendor/symfony/options-resolver" />
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/symfony/polyfill-ctype" />
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/symfony/polyfill-intl-grapheme" />
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/symfony/polyfill-intl-idn" />
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/symfony/polyfill-intl-normalizer" />
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/symfony/polyfill-mbstring" />
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/symfony/polyfill-php80" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/vendor/symfony/polyfill-php81" />
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/symfony/polyfill-php83" />
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/symfony/polyfill-php84" />
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/symfony/polyfill-php85" />
@@ -110,6 +125,7 @@
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/symfony/process" />
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/symfony/routing" />
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/symfony/service-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/vendor/symfony/stopwatch" />
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/symfony/string" />
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/symfony/translation" />
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/symfony/translation-contracts" />

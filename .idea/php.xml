@@ -15,6 +15,11 @@
     <option name="highlightLevel" value="WARNING" />
     <option name="transferred" value="true" />
   </component>
+  <component name="PhpCSFixer">
+    <phpcsfixer_settings>
+      <PhpCSFixerConfiguration tool_path="$PROJECT_DIR$/backend/vendor/bin/php-cs-fixer" />
+    </phpcsfixer_settings>
+  </component>
   <component name="PhpIncludePathManager">
     <include_path>
       <path value="$PROJECT_DIR$/backend/vendor/vlucas/phpdotenv" />
@@ -130,6 +135,21 @@
       <path value="$PROJECT_DIR$/backend/vendor/symfony/polyfill-mbstring" />
       <path value="$PROJECT_DIR$/backend/vendor/symfony/translation-contracts" />
       <path value="$PROJECT_DIR$/backend/vendor/laravel/sanctum" />
+      <path value="$PROJECT_DIR$/backend/vendor/clue/ndjson-react" />
+      <path value="$PROJECT_DIR$/backend/vendor/friendsofphp/php-cs-fixer" />
+      <path value="$PROJECT_DIR$/backend/vendor/fidry/cpu-core-counter" />
+      <path value="$PROJECT_DIR$/backend/vendor/react/stream" />
+      <path value="$PROJECT_DIR$/backend/vendor/react/socket" />
+      <path value="$PROJECT_DIR$/backend/vendor/react/event-loop" />
+      <path value="$PROJECT_DIR$/backend/vendor/react/dns" />
+      <path value="$PROJECT_DIR$/backend/vendor/react/cache" />
+      <path value="$PROJECT_DIR$/backend/vendor/react/child-process" />
+      <path value="$PROJECT_DIR$/backend/vendor/react/promise" />
+      <path value="$PROJECT_DIR$/backend/vendor/symfony/options-resolver" />
+      <path value="$PROJECT_DIR$/backend/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/backend/vendor/symfony/stopwatch" />
+      <path value="$PROJECT_DIR$/backend/vendor/symfony/polyfill-php81" />
+      <path value="$PROJECT_DIR$/backend/vendor/evenement/evenement" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.2" />
