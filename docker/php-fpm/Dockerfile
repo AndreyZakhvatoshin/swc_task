@@ -9,6 +9,7 @@ RUN apk add --no-cache \
     libzip-dev \
     icu-dev \
     oniguruma-dev \
+    libexif-dev \
     && docker-php-ext-configure gd --with-freetype --with-jpeg \
     && docker-php-ext-install -j$(nproc) \
         gd \
@@ -17,6 +18,7 @@ RUN apk add --no-cache \
         zip \
         intl \
         opcache \
+        exif \
     && apk del --no-cache \
         $PHPIZE_DEPS \
         libpng-dev \
@@ -25,7 +27,8 @@ RUN apk add --no-cache \
         postgresql-dev \
         libzip-dev \
         icu-dev \
-        oniguruma-dev
+        oniguruma-dev \
+        libexif-dev
 
 RUN apk add --no-cache \
     libpng \
