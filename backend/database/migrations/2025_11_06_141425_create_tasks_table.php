@@ -21,7 +21,6 @@ return new class extends Migration
                 ->comment('Заголовок задачи');
 
             $table->text('description')
-                ->nullable()
                 ->comment('Описание задачи');
 
             $table->enum('status', ['planned', 'in_progress', 'done'])
@@ -38,10 +37,6 @@ return new class extends Migration
                 ->index()
                 ->constrained('users')
                 ->onDelete('set null');
-
-            $table->string('attachment')
-                ->nullable()
-                ->comment('Вложению');
 
             $table->timestamps();
         });
