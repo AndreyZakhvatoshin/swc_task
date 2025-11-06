@@ -150,6 +150,12 @@
       <path value="$PROJECT_DIR$/backend/vendor/symfony/stopwatch" />
       <path value="$PROJECT_DIR$/backend/vendor/symfony/polyfill-php81" />
       <path value="$PROJECT_DIR$/backend/vendor/evenement/evenement" />
+      <path value="$PROJECT_DIR$/backend/vendor/maennchen/zipstream-php" />
+      <path value="$PROJECT_DIR$/backend/vendor/spatie/laravel-package-tools" />
+      <path value="$PROJECT_DIR$/backend/vendor/spatie/temporary-directory" />
+      <path value="$PROJECT_DIR$/backend/vendor/spatie/image" />
+      <path value="$PROJECT_DIR$/backend/vendor/spatie/image-optimizer" />
+      <path value="$PROJECT_DIR$/backend/vendor/spatie/laravel-medialibrary" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.2" />
