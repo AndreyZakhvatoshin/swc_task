@@ -2,6 +2,8 @@
 
 namespace App\Models;
 
+use App\Filters\Filterable;
+use App\Filters\TaskFilter;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
@@ -38,6 +40,7 @@ use Spatie\MediaLibrary\InteractsWithMedia;
  */
 class Task extends Model implements HasMedia
 {
+    use Filterable;
     use HasFactory;
     use InteractsWithMedia;
 
@@ -47,6 +50,8 @@ class Task extends Model implements HasMedia
         'completion_date',
         'user_id',
     ];
+
+    protected string $filterClass = TaskFilter::class;
 
     public function project(): BelongsTo
     {
