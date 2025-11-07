@@ -17,10 +17,10 @@ class TaskFilter extends QueryFilters
     }
 
     /**
-     * @param bool $value
+     * @param string $value
      * @return void
      */
-    public function user(bool $value): void
+    public function user(string $value): void
     {
         $this->builder->whereHas('user', function (Builder $query) use ($value) {
             $query->where('name', 'ilike', '%' . $value . '%');
@@ -35,6 +35,6 @@ class TaskFilter extends QueryFilters
      */
     public function completionDate(string $value): void
     {
-        $this->builder->where('completion_date', $value);
+        $this->builder->whereDate('completion_date', $value);
     }
 }
