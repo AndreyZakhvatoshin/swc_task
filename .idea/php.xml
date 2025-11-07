@@ -165,6 +165,8 @@
       <path value="$PROJECT_DIR$/backend/vendor/spatie/laravel-data" />
       <path value="$PROJECT_DIR$/backend/vendor/phpdocumentor/reflection-common" />
       <path value="$PROJECT_DIR$/backend/vendor/doctrine/deprecations" />
+      <path value="$PROJECT_DIR$/backend/vendor/barryvdh/reflection-docblock" />
+      <path value="$PROJECT_DIR$/backend/vendor/barryvdh/laravel-ide-helper" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.2" />
