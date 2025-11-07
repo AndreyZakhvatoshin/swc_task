@@ -4,7 +4,9 @@ namespace App\Http\Requests;
 
 use App\Dto\CreateProjectTaskDto;
 use App\Dto\UpdateTaskDto;
+use App\Enums\TaskStatus;
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Validation\Rules\Enum;
 
 class UpdateProjectTaskRequest extends FormRequest
 {
@@ -23,7 +25,8 @@ class UpdateProjectTaskRequest extends FormRequest
             'attachments' => ['nullable', 'array'],
             'attachments.*' => ['file'],
             'attachments_url' => ['nullable', 'array'],
-            'attachments_url.*' => ['url']
+            'attachments_url.*' => ['url'],
+            'status' => ['required', new Enum(TaskStatus::class)],
 
         ];
     }

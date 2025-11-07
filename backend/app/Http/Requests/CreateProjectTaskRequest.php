@@ -3,7 +3,9 @@
 namespace App\Http\Requests;
 
 use App\Dto\CreateProjectTaskDto;
+use App\Enums\TaskStatus;
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Validation\Rules\Enum;
 
 class CreateProjectTaskRequest extends FormRequest
 {
@@ -18,6 +20,7 @@ class CreateProjectTaskRequest extends FormRequest
             'user_id' => ['required', 'integer', 'exists:users,id'],
             'title' => ['required', 'string'],
             'description' => ['required', 'string'],
+            'status' => ['required', new Enum(TaskStatus::class)],
             'completion_date' => ['nullable', 'date'],
             'attachments' => ['nullable', 'array'],
             'attachments.*' => ['file'],

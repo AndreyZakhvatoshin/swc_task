@@ -14,6 +14,7 @@ class CreateProjectTaskDto extends Data
         public string $title,
         public string $description,
         public int $user_id,
+        public string $status,
         #[WithCast(DateWithoutTimeCast::class)]
         public ?\DateTimeImmutable $completion_date = null,
         public ?array $attachments = null,
