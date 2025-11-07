@@ -46,6 +46,7 @@ class Task extends Model implements HasMedia
 
     protected $fillable = [
         'title',
+        'status',
         'description',
         'completion_date',
         'user_id',
