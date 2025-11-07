@@ -1,0 +1,30 @@
+<?php
+
+namespace App\Http\Requests;
+
+use App\Dto\CreateProjectTaskDto;
+use Illuminate\Foundation\Http\FormRequest;
+
+class CreateProjectTaskRequest extends FormRequest
+{
+    /**
+     * Get the validation rules that apply to the request.
+     *
+     * @return array<string, \Illuminate\Contracts\Validation\ValidationRule|array<mixed>|string>
+     */
+    public function rules(): array
+    {
+        return [
+            'title' => ['required', 'string'],
+            'description' => ['required', 'string'],
+            'completion_date' => ['nullable', 'date'],
+            'attachments' => ['nullable', 'array'],
+            'attachments.*' => ['file'],
+        ];
+    }
+
+    public function toData(): CreateProjectTaskDto
+    {
+        return CreateProjectTaskDto::from($this->validated());
+    }
+}
