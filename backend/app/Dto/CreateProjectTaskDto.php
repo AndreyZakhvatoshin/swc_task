@@ -13,10 +13,10 @@ class CreateProjectTaskDto extends Data
     public function __construct(
         public string $title,
         public string $description,
+        public int $user_id,
         #[WithCast(DateWithoutTimeCast::class)]
         public ?\DateTimeImmutable $completion_date = null,
         public ?array $attachments = null,
-        public ?int $user_id = null,
     ) {
     }
 }
