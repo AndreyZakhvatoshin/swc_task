@@ -20,16 +20,4 @@ class CreateProjectTaskDto extends Data
         public ?int $user_id = null,
     ) {
     }
-
-    public static function rules(ValidationContext $context): array
-    {
-        return [
-            'title' => [$context->isFullPayload() ? 'required' : 'sometimes', 'string'],
-            'description' => [$context->isFullPayload() ? 'required' : 'sometimes', 'string'],
-            'completion_date' => ['nullable', 'date'],
-            'attachments' => ['nullable', 'array'],
-            'attachments.*' => ['file'],
-            'user_id' => ['nullable', 'integer'],
-        ];
-    }
 }
