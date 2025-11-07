@@ -14,8 +14,6 @@ class CreateProjectTaskCase
 {
     public function __invoke(User $user, Project $project, CreateProjectTaskDto $dto): Task
     {
-        $dto->user_id = $user->id;
-
         $task = $project->tasks()->create($dto->toArray());
 
         if ($dto->attachments) {
