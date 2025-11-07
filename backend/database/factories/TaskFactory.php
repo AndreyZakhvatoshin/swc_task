@@ -20,7 +20,6 @@ class TaskFactory extends Factory
             'description' => $this->faker->text(),
             'status' => TaskStatus::PLANNED->value,
             'completion_date' => $this->faker->date(),
-            'attachment' => $this->faker->imageUrl(),
         ];
     }
 }
